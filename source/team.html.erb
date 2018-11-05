@@ -1,0 +1,21 @@
+<div class="navbar-wagon">
+  <%= partial "layouts/navbar" %>
+</div>
+
+<div class="text-center">
+  <h1>This terrible template is built by</h1>
+</div>
+
+<ul class="list-inline text-center">
+  <% ["swoerner", "hilsenrath"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <h3><%= gh_username.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+
+<div class="footer">
+  <%= partial "layouts/footer" %>
+</div>
